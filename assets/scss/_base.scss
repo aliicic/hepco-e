@@ -1,0 +1,40 @@
+  @font-face {
+    font-family: 'shabnam';
+    src: url('../fonts/Shabnam-Bold.woff2') ;
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: 'shabnam';
+    src: url('../fonts/Shabnam-Light.woff2') ;
+    font-weight:lighter;
+  }
+  @font-face {
+    font-family: 'shabnam';
+    src: url('../fonts/Shabnam-Thin.woff2') ;
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: 'shabnam';
+    src: url('../fonts/Shabnam.woff2') ;
+    font-weight:normal
+  }
+  @font-face {
+    font-family: 'dubai-med';
+    src: url('../fonts/Shabnam-Medium.woff2') ;
+    font-weight: 500;
+  }
+
+  
+    
+  $primary-font : 'shabnam';
+
+  
+  $color-primary :#ffcb05 ;
+  $color-secondary: #1A1B25;
+  $color-grey : #7F8086;
+  $bg-color-primary :#1A1B25 ;
+  $bg-color-secondary : #E4E4E4 ;
+
+  *{
+    direction: rtl;
+  }
