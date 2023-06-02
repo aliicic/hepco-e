@@ -209,6 +209,7 @@ main {
  justify-content: center;
  font-family: $primary-font;
  .pagination{
+  direction: ltr!important;
    li{
     
     a{
@@ -225,6 +226,9 @@ body {
 
 }
 
+.swiper-wrapper , .banner-frame{
+  height: 370px;
+}
 
 
 .page-frame {
@@ -556,6 +560,7 @@ svg + svg {
 
   .post-info  { 
     .info-items{
+        
         padding-top: 10px;
         margin-bottom: 30px;
         font-family: $primary-font;
@@ -571,6 +576,9 @@ svg + svg {
 
         div{
           margin-left: 50px;
+        }
+        a{
+          color : black!important;
         }
     }
   }
