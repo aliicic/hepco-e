@@ -98,6 +98,69 @@
   }
 
 
+.calls-dialog{
+  transition: .4s all;
+  background: white;
+  padding:15px;
+  border-radius: 15px;
+  position: absolute;
+  left: 30px;
+  top: -800px;
+  overflow: hidden;
+  width: 450px;
+  font-family:$primary-font;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 2px solid $color-primary;
+
+  .frame{
+    .input-frame{
+      // position: fixed;
+      width: 420px;
+
+       input{
+         width: 100%;
+         border: 1px solid $color-primary;
+         border-radius: 5px;
+         padding: 5px;
+         margin-bottom: 10px;
+       };
+     }
+  .list-frame{
+    overflow-y: scroll;
+    height: 400px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
+    /* Hide scrollbar for IE, Edge and Firefox */
+    & {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+ 
+    ul{
+      padding-right: 0;
+        li{
+          display: flex;
+          margin-right: 0;
+          justify-content: space-between;
+          padding:10px 5px ;
+          &:nth-child(odd){
+            background-color: #E1F5FE;
+          }
+          span{
+            font-size: 13px;
+          }
+        }
+      }
+  }
+  }
+
+}
+.call-dialog-actvie {
+  top:65px!important;
+}
+
 main {
   //   background-color: aqua;
   border-radius: 20px;
@@ -269,7 +332,7 @@ body {
 
 .icon-btn{
   transition: .2s all;
-
+  cursor: pointer;
   width: 40px;
   height: 40px;
   border-radius: 10px;
@@ -291,6 +354,7 @@ body {
   }
 
 }
+
 .yellow-icon-btn{
  background: #FFFDE7;
 
@@ -298,6 +362,7 @@ body {
   color: #F9A825;
  }
 }
+
 .blue-icon-btn{
  background: #E1F5FE;
 
@@ -305,6 +370,7 @@ body {
   color:#0277BD
  }
 }
+
 .orange-icon-btn{
   background: #E8F5E9;
   i{
@@ -559,6 +625,7 @@ svg + svg {
   }
 
   .post-info  { 
+
     .info-items{
         
         padding-top: 10px;
@@ -569,6 +636,14 @@ svg + svg {
         justify-content: start;
         align-items: center;
         width: 100%;
+        flex-wrap: nowrap;
+        @media(max-width:992px){
+        display: block;
+        div{
+          margin: 10px;
+          margin-right: 0;
+        }
+        }
 
         i{
           margin-left: 5px;
@@ -576,6 +651,7 @@ svg + svg {
 
         div{
           margin-left: 50px;
+      
         }
         a{
           color : black!important;

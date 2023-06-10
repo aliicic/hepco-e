@@ -36,3 +36,10 @@ let preloader = document.getElementById("preloader");
 setTimeout(() => {
   preloader.style.top = "-140%";
 }, 3000);
+
+const callsBtn  = document.getElementById('calls')
+const callsDialog  = document.getElementById('calls-dialog')
+callsBtn.addEventListener("click", (e) => {
+  callsDialog.classList.toggle("call-dialog-actvie");
+
+});
